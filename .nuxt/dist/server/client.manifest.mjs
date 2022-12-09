@@ -1,0 +1,1 @@
+export { default } from "file:///D:/Work/test_tasks/frontco/weather-app/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"

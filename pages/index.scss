@@ -1,0 +1,116 @@
+.page {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.content {
+    flex-grow: 1;
+}
+.title {
+    @apply text-4xl font-bold mb-[24px] text-center;
+    background: -webkit-linear-gradient(#fff, rgb(52, 102, 149));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.forecast-table-wrap {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #09121A;
+    border: 5px solid #4B555F;
+    border-radius: 20px;
+    @apply p-[20px];
+}
+
+.forecast-table {
+    margin: 0 auto;
+    @apply border-collapse w-full max-w-[50%];
+
+    th {
+        @apply text-left;
+        background: -webkit-linear-gradient(#fff, rgb(52, 102, 149));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor: pointer;
+    }
+
+    th,
+    td {
+        @apply px-[10px] py-[5px] border-none w-[25%]
+    }
+
+    td {
+        background: linear-gradient(180deg, #298BE7 0%, #70EFEE 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+
+    &__sort-wrap {
+        display: flex;
+        align-items: center;
+    }
+
+    &__sort {
+        width: 16px;
+        height: 16px;
+        margin-left: 10px;
+        opacity: 0.5;
+
+        .ascending &,
+        .descending & {
+            opacity: 1;
+        }
+    }
+
+    &__delete {
+        @apply p-[4px] inline-block;
+
+        svg {
+            @apply block w-4 h-4;
+        }
+
+        path {
+            fill: #fff;
+        }
+
+        &:hover {
+            path {
+                fill: #F73E5D;
+            }
+        }
+    }
+}
+
+.add-button {
+    @apply  min-w-[100px] mt-4;
+}
+
+.available-cities {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+
+    &__item {
+        padding: 10px 0;
+    }
+
+    &__city {
+        display: flex;
+        align-items: center;
+
+        input {
+            margin: 0 12px 0 0;
+        }
+    }
+}
+
+.input {
+    color: #000;
+    border-radius: 4px;
+    padding: 4px 12px;
+    background: rgba(255,255,255,0.9);
+}

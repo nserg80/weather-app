@@ -1,0 +1,27 @@
+body {
+    background: #21201F;
+    font-family: 'Roboto Condensed', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #fff;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.button {
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    text-align: center;
+    border-radius: 90px;
+    cursor: pointer;
+    box-shadow: none;
+    background: linear-gradient(180deg, #298BE7 0%, #70EFEE 100%);
+}
+
+.button:hover {
+    box-shadow: 0 0 5px #298BE7;
+}
